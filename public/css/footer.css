@@ -1,0 +1,64 @@
+/* ----- PIE DE PÁGINA ----- */
+footer {
+    background-color: #2D2D2D; /* PANTONE® RAL 9004 */
+    color: white;
+    padding: 40px 20px;
+    font-family: 'Avenir Next LT Pro', sans-serif;
+  }
+  
+  /* Contenedor principal */
+  .footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Logo en el footer */
+  .footer-logo img {
+    height: 80px;
+  }
+  
+  /* Secciones de información */
+  .footer-info {
+    flex: 1;
+    text-align: left;
+    margin-left: 40px;
+  }
+  
+  .footer-info h3 {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #15CD82; /* PANTONE® 7480 XGC */
+  }
+  
+  .footer-info p {
+    font-size: 0.9rem;
+    margin: 5px 0;
+  }
+  
+  .footer-info a {
+    color: #15CD82; /* PANTONE® 7480 XGC */
+    text-decoration: none;
+  }
+  
+  .footer-info a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Línea separadora */
+  footer hr {
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    margin: 20px auto;
+    width: 90%;
+  }
+  
+  /* Derechos reservados */
+  .footer-bottom {
+    text-align: center;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  

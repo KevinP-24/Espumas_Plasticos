@@ -1,0 +1,180 @@
+@font-face {
+  font-family: 'Fashion Fetish Light';
+  src: url('../fonts/Fashion-Fetish-Light.ttf') format('truetype');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Fashion Fetish Regular';
+  src: url('../fonts/Fashion-Fetish-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Avenir Next LT Pro';
+  src: url('../fonts/AvenirNextLTPro-Regular.otf') format('opentype');
+  font-weight: 400;
+}
+
+/* --- ESTILOS GENERALES --- */
+body {
+  font-family: 'Avenir Next LT Pro', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #FFF; /* Fondo blanco */
+}
+
+/* --- ENCABEZADO --- */
+header {
+  background-color: #e6e6e6; /* Color de fondo */
+  padding: 10px 0;
+}
+
+/* Contenedor principal del encabezado */
+header div {
+  display: flex;
+  align-items: center; /* Centra verticalmente los elementos */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* --- LOGO --- */
+header img {
+  height: 80px; /* Aumenta el tamaño del logo */
+}
+
+/* --- MENÚ DE NAVEGACIÓN AL LADO DEL LOGO --- */
+nav {
+  margin-left: 20px; /* Espacio entre el logo y los botones */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px; /* Espaciado entre botones del menú */
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+/* Estilos de los enlaces del menú */
+nav ul li a {
+  text-decoration: none;
+  font-family: 'Avenir Next LT Pro', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #2D2D2D; /* PANTONE® RAL 9004 */
+}
+
+nav ul li a:hover {
+  color: #15CD82; /* PANTONE® 7480 XGC */
+}
+
+/* --- ESTILO PARA EL TEXTO DEL LOGO --- */
+header h1 {
+  font-family: 'Fashion Fetish Regular', sans-serif;
+  font-size: 2rem;
+  color: #0d7c84;
+}
+
+header h1 span {
+  font-family: 'Fashion Fetish Light', sans-serif;
+  font-weight: 300;
+  color: #15CD82;
+}
+
+
+/* ---- LO MEJOR PARA TU DESCANSO ---*/
+
+
+/* --- SECCIÓN HERO --- */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 20px;
+}
+
+/* Contenedor de texto */
+.hero-content {
+  flex: 1;
+  text-align: left;
+}
+
+.hero-content h1 {
+  font-family: 'Avenir Next LT Pro', sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #000;
+}
+
+.hero-content h1 span {
+  color: #009AA2; /* PANTONE® 320 XGC */
+}
+
+.hero-content .subtitle {
+  font-size: 1rem;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.hero-content h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid #000;
+  text-decoration: none;
+  font-size: 1rem;
+  color: #000;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #000;
+  color: #FFF;
+}
+
+/* --- CARRUSEL --- */
+.hero-carousel {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #15CD82; /* PANTONE® 7480 XGC */
+  width: 50%;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel {
+  display: flex;
+  width: 100%;
+  animation: slide 10s infinite;
+}
+
+.carousel img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* --- Animación simple para el carrusel --- */
+@keyframes slide {
+  0% { transform: translateX(0%); }
+  33% { transform: translateX(-100%); }
+  66% { transform: translateX(-200%); }
+  100% { transform: translateX(0%); }
+}
+
