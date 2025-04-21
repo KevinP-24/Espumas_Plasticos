@@ -40,6 +40,10 @@
     <link rel="stylesheet" href="/css/footer.css">
     <link rel="stylesheet" href="/css/valorAgre.css">
     <link rel="stylesheet" href="/css/contacto1.css">
+    <link rel="stylesheet" href="/css/style-contacto.css">
+    <link rel="stylesheet" href="/css/mapaAlargado.css">
+
+
 
 
 
@@ -70,64 +74,21 @@
 
 <body>
 
-    <section id="contacto" class="contacto">
-        <div class="container">
-          <h2>Contacto</h2>
-          <p>En <strong>Espumas y Plásticos SAS</strong> nos preocupamos por tu opinión y sugerencias. Llámanos o escríbenos, te responderemos lo más pronto posible.</p>
-      
-          <!-- Mapa con iframe -->
-          <div class="mapa">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.658054617722!2d-75.6781917!3d4.5308125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e387cf379f8842d%3A0x128c32c5e13be709!2sEspumas%20y%20Pl%C3%A1sticos%20SAS!5e0!3m2!1ses!2sco!4v1713712880000"
-              width="100%"
-              height="350"
-              style="border:0;"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-              title="Ubicación Espumas y Plásticos en Armenia, Quindío">
-            </iframe>
-          </div>
-      
-          <!-- Datos de contacto -->
-          <div class="datos-contacto">
-            <div class="item">
-              <i class="fas fa-map-marker-alt"></i>
-              <h3>Dirección:</h3>
-              <p>Carrera 19 #19-27, Armenia, Quindío</p>
-            </div>
-      
-            <div class="item">
-              <i class="fas fa-phone"></i>
-              <h3>Contacto:</h3>
-              <p>+57 311 341 6659 - 731 2577<br>
-              <a href="mailto:contacto@espumasyplasticos.com">contacto@espumasyplasticos.com</a></p>
-            </div>
-          </div>
-      
-          <!-- Formulario -->
-          <form action="/enviar-formulario" method="POST" class="formulario-contacto">
-            <label for="nombre">Nombre completo</label>
-            <input type="text" id="nombre" name="nombre" required>
-      
-            <label for="correo">Correo electrónico</label>
-            <input type="email" id="correo" name="correo" required>
-      
-            <label for="mensaje">Mensaje</label>
-            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
-      
-            <button type="submit">Enviar mensaje</button>
-          </form>
-        </div>
-      </section>
-      
-
-
-
-
-    <script src="js/cargarNavbar.js"></script>
-    <script src="js/cargarValorAgre.js"></script>
-    <script src="js/cargarFooter.js"></script>
+  <section class="seccion-contacto-inicio">
+    <div class="container">
+      <h2 class="titulo-contacto">CONTACTO</h2>
+      <p class="intro-contacto">
+        En <strong>Espumas y Plásticos SAS</strong> nos preocupamos por tu opinión y sugerencias,<br>
+        llámanos o contáctanos por medio del siguiente formulario. En el menor tiempo posible
+        nos comunicaremos contigo para brindarte la mejor atención.
+      </p>
+    </div>
+  </section>
+  
+  <script src="js/cargarNavbar.js"></script>
+  <script src="js/cargarMapaAlargado.js"></script>
+  <script src="js/cargarValorAgre.js"></script>
+  <script src="js/cargarFooter.js"></script>
 
 </body>
 </html>

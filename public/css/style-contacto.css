@@ -1,0 +1,29 @@
+.seccion-contacto-inicio {
+    padding: 4rem 1rem 2rem;
+    text-align: center;
+  }
+  
+  .titulo-contacto {
+    font-family: 'Fashion Fetish', sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    color: #2D2D2D;
+    margin-bottom: 1rem;
+    position: relative;
+  }
+  
+  .titulo-contacto::before {
+    content: "—";
+    color: #009AA2;
+    margin-right: 0.5rem;
+  }
+  
+  .intro-contacto {
+    font-family: 'Avenir Next Pro', sans-serif;
+    font-size: 1rem;
+    color: #666;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+  

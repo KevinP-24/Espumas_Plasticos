@@ -17,17 +17,25 @@
 }
 
 /* --- ESTILOS GENERALES --- */
+/* Ajusta el espacio superior para el resto del contenido */
 body {
   font-family: 'Avenir Next LT Pro', sans-serif;
   margin: 0;
-  padding: 0;
-  background-color: #FFF; /* Fondo blanco */
+  padding-top: 100px; /* ⬅️ Espacio equivalente a la altura del header */
+  background-color: #FFF;
 }
 
 /* --- ENCABEZADO --- */
+/* --- ENCABEZADO FIJO --- */
 header {
-  background-color: #e6e6e6; /* Color de fondo */
+  position: fixed;            /* 🔒 Fijar en la parte superior */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;              /* 🔝 Asegura que esté sobre otros elementos */
+  background-color: #e6e6e6;  /* Color del fondo */
   padding: 10px 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* ✨ Sombra sutil al hacer scroll */
 }
 
 /* Contenedor principal del encabezado */
